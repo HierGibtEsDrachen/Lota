@@ -22,6 +22,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\LotaBase.xml</DocumentationFile>
+    <NoWarn>CS1591;</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -54,6 +56,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chunk.cs" />
+    <Compile Include="Coordinate.cs" />
+    <Compile Include="Develope\DevelopeMapGenerator.cs" />
+    <Compile Include="IGameService.cs" />
+    <Compile Include="MapGenerator.cs" />
+    <Compile Include="IPersistable.cs" />
+    <Compile Include="IPersistanceManger.cs" />
+    <Compile Include="IResourceManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

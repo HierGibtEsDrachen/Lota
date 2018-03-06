@@ -8,6 +8,7 @@ namespace LotaRuntime
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
             using (LotaGame game = new LotaGame())
